@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import {
     Welcome,
+    Walkthrough
 } from "./screens";
 
 const Stack = createStackNavigator();
@@ -18,6 +19,7 @@ const App = () => {
                 initialRouteName={'Welcome'}
             >
                 <Stack.Screen name="Welcome" component={Welcome} />
+                <Stack.Screen name="Walkthrough" component={Walkthrough} />
             </Stack.Navigator>
         </NavigationContainer>
     )
